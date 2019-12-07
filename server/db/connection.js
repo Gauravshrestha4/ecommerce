@@ -1,7 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize('ecom_test', '', '', {
-    
+const sequelize = new Sequelize('testdb', 'root', 'root', {   
     /*this will be changes in production */
     host: 'localhost',
     port: '3306',
@@ -18,7 +17,10 @@ sequelize
             console.log(`Database Connection Setup Successfully ..!!`);
         })
         .catch((error) => {
-            console.log(`Error: Could not connect to the database ..!!`);
+            console.log(`Error: Could not connect to the database ..!! ${error}`);
         })
 
-
+module.exports ={
+    Sequelize,
+    sequelize
+}
