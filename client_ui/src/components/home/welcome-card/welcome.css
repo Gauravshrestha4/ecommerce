@@ -1,0 +1,20 @@
+.welcome-board{
+    padding: 30px;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    display: grid;
+    /* justify-items: center; */
+    align-items: center;
+}
+
+.welcome-msg{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #000000;
+    line-height: 5px;
+}
+.welcome-tagline{
+    font-size: 14px;
+    color: #000000;
+}

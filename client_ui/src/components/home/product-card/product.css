@@ -1,0 +1,19 @@
+    .category{
+        display: flex;
+        justify-content: space-between;
+    }
+    .category>p{
+        font-size:12px;
+        color:blue;
+    }
+    .card-img-top{
+        height:150px;
+        width:150px;
+    }
+    .card-text{
+        font-size: 13px;
+    }
+    .card-img-overlay{
+        background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+        opacity: 50%;
+    }

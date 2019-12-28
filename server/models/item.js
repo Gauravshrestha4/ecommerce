@@ -24,7 +24,7 @@ Item.init({
         allowNull: false
     },
 
-    short_description :{
+    shortDescription :{
         type: Sequelize. STRING,
         allowNull: false
     },
@@ -43,10 +43,15 @@ Item.init({
         type: Sequelize.INTEGER,
         allowNull: true
     },
-
+    
     category:{
         type: Sequelize.STRING,
         allowNull: true
+    },
+
+    subCategory: {
+        type: Sequelize.STRING,
+        allowNull: false
     },
 
     freeDelivery:{
@@ -74,3 +79,5 @@ Item.sync({
 .catch((error) => {
     console.log(`Item table could not be synced ..!!`)
 })
+
+module.exports = Item

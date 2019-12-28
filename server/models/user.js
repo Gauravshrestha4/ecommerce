@@ -16,6 +16,11 @@ User.init({
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4 
     },
+    isAdmin: {
+        type: Sequelize.BOOLEAN,
+        allowNull: true,
+        defaultValue: false
+    },
     phone:{
         type: Sequelize.STRING,
         allowNull: false,
